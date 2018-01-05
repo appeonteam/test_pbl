@@ -18,7 +18,7 @@ end type
 global uo_2 uo_2
 
 event clicked;//
-MessageBox ( "aa", "bbccddeeeff" )
+MessageBox ( "aa", "bbccddeeeffgg" )
 end event
 
 on uo_2.create
