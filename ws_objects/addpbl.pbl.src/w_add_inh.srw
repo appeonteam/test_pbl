@@ -27,7 +27,7 @@ end on
 type cb_1 from w_add`cb_1 within w_add_inh
 end type
 
-event cb_1::clicked;call super::clicked;MessageBox ( "tip", "add 1 for inh" )
+event cb_1::clicked;call super::clicked;MessageBox ( "tip", "add 1 for inh ccc" )
 end event
 
 type cb_2 from commandbutton within w_add_inh
