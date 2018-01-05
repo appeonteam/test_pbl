@@ -1,0 +1,9 @@
+﻿Save Format v3.0(19990112)
+@begin Libraries
+ "addpbl.pbl" "";
+@end;
+@begin Objects 
+ "m_1.srm" "addpbl.pbl";
+ "w_add.srw" "addpbl.pbl";
+ "w_add_inh.srw" "addpbl.pbl";
+@end;
