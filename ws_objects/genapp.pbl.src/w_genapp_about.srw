@@ -64,7 +64,7 @@ string facename = "Tahoma"
 string text = "none"
 end type
 
-event clicked;MessageBox ( "aa", "bbccddee" )
+event clicked;MessageBox ( "aa", "bbccddeeff" )
 end event
 
 type cb_1 from commandbutton within w_genapp_about
