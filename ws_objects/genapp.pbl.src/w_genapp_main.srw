@@ -34,6 +34,9 @@ if IsValid(MenuID) then destroy(MenuID)
 destroy(this.cb_1)
 end on
 
+event open;//aaa
+end event
+
 type cb_1 from commandbutton within w_genapp_main
 integer x = 398
 integer y = 92
