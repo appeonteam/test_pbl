@@ -92,8 +92,8 @@ string text = "3333"
 end type
 
 type cb_2 from commandbutton within w_genapp_about
-integer x = 247
-integer y = 496
+integer x = 128
+integer y = 500
 integer width = 343
 integer height = 92
 integer taborder = 30
