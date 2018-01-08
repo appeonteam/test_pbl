@@ -6,6 +6,8 @@ type cb_2 from commandbutton within w_add_inh
 end type
 type cb_3 from commandbutton within w_add_inh
 end type
+type cb_4 from commandbutton within w_add_inh
+end type
 type r_1 from rectangle within w_add_inh
 end type
 end forward
@@ -13,6 +15,7 @@ end forward
 global type w_add_inh from w_add
 cb_2 cb_2
 cb_3 cb_3
+cb_4 cb_4
 r_1 r_1
 end type
 global w_add_inh w_add_inh
@@ -22,17 +25,20 @@ int iCurrent
 call super::create
 this.cb_2=create cb_2
 this.cb_3=create cb_3
+this.cb_4=create cb_4
 this.r_1=create r_1
 iCurrent=UpperBound(this.Control)
 this.Control[iCurrent+1]=this.cb_2
 this.Control[iCurrent+2]=this.cb_3
-this.Control[iCurrent+3]=this.r_1
+this.Control[iCurrent+3]=this.cb_4
+this.Control[iCurrent+4]=this.r_1
 end on
 
 on w_add_inh.destroy
 call super::destroy
 destroy(this.cb_2)
 destroy(this.cb_3)
+destroy(this.cb_4)
 destroy(this.r_1)
 end on
 
@@ -78,6 +84,22 @@ fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
 string facename = "Tahoma"
 string text = "123"
+end type
+
+type cb_4 from commandbutton within w_add_inh
+integer x = 1591
+integer y = 612
+integer width = 457
+integer height = 132
+integer taborder = 30
+boolean bringtotop = true
+integer textsize = -12
+integer weight = 400
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "Tahoma"
+string text = "456"
 end type
 
 type r_1 from rectangle within w_add_inh
