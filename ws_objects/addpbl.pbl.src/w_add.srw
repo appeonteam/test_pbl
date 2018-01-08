@@ -46,6 +46,6 @@ string facename = "Tahoma"
 string text = "add"
 end type
 
-event clicked;MessageBox ( "tip", "add window, modify " )
+event clicked;MessageBox ( "tip", "add window, modify aa " )
 end event
 
