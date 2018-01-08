@@ -12,6 +12,8 @@ type cb_5 from commandbutton within w_add_inh
 end type
 type cb_6 from commandbutton within w_add_inh
 end type
+type cb_7 from commandbutton within w_add_inh
+end type
 type r_1 from rectangle within w_add_inh
 end type
 end forward
@@ -22,6 +24,7 @@ cb_3 cb_3
 cb_4 cb_4
 cb_5 cb_5
 cb_6 cb_6
+cb_7 cb_7
 r_1 r_1
 end type
 global w_add_inh w_add_inh
@@ -34,6 +37,7 @@ this.cb_3=create cb_3
 this.cb_4=create cb_4
 this.cb_5=create cb_5
 this.cb_6=create cb_6
+this.cb_7=create cb_7
 this.r_1=create r_1
 iCurrent=UpperBound(this.Control)
 this.Control[iCurrent+1]=this.cb_2
@@ -41,7 +45,8 @@ this.Control[iCurrent+2]=this.cb_3
 this.Control[iCurrent+3]=this.cb_4
 this.Control[iCurrent+4]=this.cb_5
 this.Control[iCurrent+5]=this.cb_6
-this.Control[iCurrent+6]=this.r_1
+this.Control[iCurrent+6]=this.cb_7
+this.Control[iCurrent+7]=this.r_1
 end on
 
 on w_add_inh.destroy
@@ -51,6 +56,7 @@ destroy(this.cb_3)
 destroy(this.cb_4)
 destroy(this.cb_5)
 destroy(this.cb_6)
+destroy(this.cb_7)
 destroy(this.r_1)
 end on
 
@@ -145,6 +151,22 @@ fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
 string facename = "Tahoma"
 string text = "none"
+end type
+
+type cb_7 from commandbutton within w_add_inh
+integer x = 2382
+integer y = 328
+integer width = 457
+integer height = 132
+integer taborder = 30
+boolean bringtotop = true
+integer textsize = -12
+integer weight = 400
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "Tahoma"
+string text = "pull1"
 end type
 
 type r_1 from rectangle within w_add_inh
