@@ -25,7 +25,7 @@ destroy(this.cb_2)
 end on
 
 event open;call super::open;//tes
-//123
+//1234
 end event
 
 type cb_1 from w_add`cb_1 within w_add_inh
