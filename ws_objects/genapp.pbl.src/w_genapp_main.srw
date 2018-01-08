@@ -3,6 +3,8 @@ $PBExportComments$Generated SDI Main Window
 forward
 global type w_genapp_main from window
 end type
+type cb_2 from commandbutton within w_genapp_main
+end type
 type cb_1 from commandbutton within w_genapp_main
 end type
 end forward
@@ -19,23 +21,42 @@ boolean maxbox = true
 boolean resizable = true
 long backcolor = 79416533
 boolean center = true
+cb_2 cb_2
 cb_1 cb_1
 end type
 global w_genapp_main w_genapp_main
 
 on w_genapp_main.create
 if this.MenuName = "m_genapp_main" then this.MenuID = create m_genapp_main
+this.cb_2=create cb_2
 this.cb_1=create cb_1
-this.Control[]={this.cb_1}
+this.Control[]={this.cb_2,&
+this.cb_1}
 end on
 
 on w_genapp_main.destroy
 if IsValid(MenuID) then destroy(MenuID)
+destroy(this.cb_2)
 destroy(this.cb_1)
 end on
 
 event open;//aaa
 end event
+
+type cb_2 from commandbutton within w_genapp_main
+integer x = 690
+integer y = 420
+integer width = 457
+integer height = 132
+integer taborder = 20
+integer textsize = -12
+integer weight = 400
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "Tahoma"
+string text = "pull2"
+end type
 
 type cb_1 from commandbutton within w_genapp_main
 integer x = 398
