@@ -49,6 +49,6 @@ string facename = "Tahoma"
 string text = "none"
 end type
 
-event clicked;MessageBox ( "tt", "test" )
+event clicked;MessageBox ( "tt", "test44" )
 end event
 
