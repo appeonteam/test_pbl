@@ -3,6 +3,8 @@ $PBExportComments$Generated SDI About Box
 forward
 global type w_genapp_about from window
 end type
+type cb_3 from commandbutton within w_genapp_about
+end type
 type cb_2 from commandbutton within w_genapp_about
 end type
 type cb_1 from commandbutton within w_genapp_about
@@ -24,6 +26,7 @@ boolean controlmenu = true
 windowtype windowtype = response!
 long backcolor = 79416533
 boolean center = true
+cb_3 cb_3
 cb_2 cb_2
 cb_1 cb_1
 cb_ok cb_ok
@@ -32,22 +35,40 @@ end type
 global w_genapp_about w_genapp_about
 
 on w_genapp_about.create
+this.cb_3=create cb_3
 this.cb_2=create cb_2
 this.cb_1=create cb_1
 this.cb_ok=create cb_ok
 this.st_copyright=create st_copyright
-this.Control[]={this.cb_2,&
+this.Control[]={this.cb_3,&
+this.cb_2,&
 this.cb_1,&
 this.cb_ok,&
 this.st_copyright}
 end on
 
 on w_genapp_about.destroy
+destroy(this.cb_3)
 destroy(this.cb_2)
 destroy(this.cb_1)
 destroy(this.cb_ok)
 destroy(this.st_copyright)
 end on
+
+type cb_3 from commandbutton within w_genapp_about
+integer x = 722
+integer y = 516
+integer width = 343
+integer height = 92
+integer taborder = 40
+integer textsize = -8
+integer weight = 400
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "Tahoma"
+string text = "3333"
+end type
 
 type cb_2 from commandbutton within w_genapp_about
 integer x = 247
